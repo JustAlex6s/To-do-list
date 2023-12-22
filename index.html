@@ -1,30 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Task List</title>
-
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Styles CSS inchangés pour la simplicité */
+    </style>
 </head>
 
 <body>
-    <h1>Task List</h1>
+    <div id="app-container">
+        <header>
+            <h1>Task List</h1>
+        </header>
 
-    <form>
-        <label for="newTask">Nouvelle tâche:</label>
-        <input type="text" id="newTask" required>
-        <button type="button" onclick="addTask()">Ajouter</button>
-    </form>
+        <form>
+            <label for="newTask">Nouvelle tâche:</label>
+            <input type="text" id="newTask" required>
+            <button type="button" onclick="addTask()">Ajouter</button>
+        </form>
 
+        <ul id="taskList"></ul>
 
-    <ul id="taskList"></ul>
+        <button type="button" onclick="deleteCompleted()">Supprimer les tâches terminées</button>
+    </div>
 
-
-    <button type="button" onclick="deleteCompleted()">Supprimer les tâches terminées</button>
     <script src="assets/js/script.js"></script>
 </body>
 
 </html>
+
