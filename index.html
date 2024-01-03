@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List</title>
     <link rel="stylesheet" href="style.css"> 
+   
     <style>
-        /* Styles CSS inchangés pour la simplicité */
+        
     </style>
 </head>
 
@@ -19,16 +20,18 @@
 
         <form>
             <label for="newTask">Nouvelle tâche:</label>
-            <input type="text" id="newTask" required>
-            <button type="button" onclick="addTask()">Ajouter</button>
+            <input type="text" id="newTask">
+            <button type="button" id="addTask">Ajouter</button>
         </form>
 
-        <ul id="taskList"></ul>
+        <ul id="taskList">
 
-        <button type="button" onclick="deleteCompleted()">Supprimer les tâches terminées</button>
+        </ul>
+
+        <button type="button" id="delete">Supprimer les tâches terminées</button>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="test.js"></script>
 </body>
 
 </html>
